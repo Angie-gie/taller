@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Proyecto de investigación}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        Nociones de la memoria del computador
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Angie Paola Jaramillo Ortega}
             
         \vfill
             
@@ -36,41 +36,31 @@
     \end{center}
 \end{titlepage}
 
-\tableofcontents
+\section{Definición e Historia de la memoria del computador}
+La memoria de un computador el es dispositivo que retiene, memoriza o almacena datos informáticos durante un periodo de tiempo.
 
-\section{Sección introductoria}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Tipos de memoria}
 
-\section{Sección de contenido} \label{contenido}
+\subsection{Memoria RAM:}
+Memoria volátil, es decir que una vez que pierde o se interrumpe el flujo de corriente pierde toda su información (cuando se abre un programa el computador debe dar la orden de leer el disco duro, pero esta operación es muy larga y "costosa", mientras usas el programa generas información que debería guardarse en el disco duro y requiere más movimiento de información) permite el acceso de información de forma más rápida sin necesidad de acceder al disco duro cada vez.
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
+\subsection{Memoria ROM(read only memory):} 
+Memoria no volátil o sea que si deja de haber flujo de corriente no pierde información. Contiene las instrucciones más elementales del dispositivo, contiene la BIOS, se encarga de cargar y probar el hardware del sistema y cargar el sistema operativo desde un dispositivo de almacenamiento (disco duro o pendrive).
+
+\subsection{Memoria Caché: } 
+Componente de hardware o software que almacena datos para que las solicitudes futuras de esos datos se puedan atender con mayor rapidez.
+
+\section{Gestión de la memoria en un computador}
+Cuando se quiere abrir un programa se manda la orden de cargar una serie de datos del disco duro a la RAM. El disco duro está hecho de varios discos de acero que son los que contiene la información. El disco tiene una tabla donde tiene guardado la posición de cada uno de estos archivos (sistema de ficheros), luego se busca los datos en la posición especificada.
+
+\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+Se vuelve poco eficiente un computador que demore para acceder a información, y cada vez los programas se vuelven más exigentes en cuanto a hardware y requieren más espacio, por esta razón se ve que los computadores pierden velocidad con los años, porque las mismas características de hardware de hace unos años ya no son capaces de correr programas más actuales.
 
 El paquete también agrega un comportamiento especial 
 a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
+lo indican las reglas de la RAE. \cite{knuthwebsite}
 
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
-
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
-\end{lstlisting}
+\vspace{5mm}
 
 A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
 
@@ -81,9 +71,7 @@ A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
 \label{fig:cpplogo}
 \end{figure}
 
-En la sección de teoremas (\ref{contenido})
-
-\section{Conclusión} \label{conclulsion}
+\clearpage
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
