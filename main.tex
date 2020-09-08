@@ -31,33 +31,48 @@
         Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
-        Septiembre de 2020
+        Septiembre 08 de 2020
             
     \end{center}
 \end{titlepage}
 
-\section{Introducción}label{sec:Introducción}
+\section*{Introducción}label{sec:Introducción}
 Comúnmente definimos la memoria como “la capacidad o facultad de retener y recordar información”\cite{definicion} y usualmente relacionamos esto con la memoria humana. Sin embargo, con los años esta capacidad se ha extendido también hasta el ámbito de la electrónica y los computadores. En la presente investigación explicaremos a que nos referimos cuando hablamos de la memoria de un computador, se mencionaran diferentes tipos de memoria que existen y algunas diferencias que tienen entre estas.
 
 
-\section{Definición}
-Dentro de la informática nos referimos a la memoria de un computador como el dispositivo que retiene, memoriza o almacena datos informáticos durante un periodo de tiempo.
+\section*{Definición}
+Dentro de la informática nos referimos a la memoria de un computador como el dispositivo que retiene, memoriza o almacena datos informáticos durante un periodo de tiempo. La memoria almacena la información usando el sistema binario usando los numero 0 y 1 para representar los dos estados con los que trabaja, encendido/apagado que es determinado según el paso de corriente. Es importante resaltar que mientras mayor sea la capacidad de memoria de nuestro computador mejor será el rendimiento de este.
 
-\section{Tipos de memoria}
+\section*{Tipos de memoria}
 
-\subsection{Memoria RAM:}
-Memoria volátil, es decir que una vez que pierde o se interrumpe el flujo de corriente pierde toda su información (cuando se abre un programa el computador debe dar la orden de leer el disco duro, pero esta operación es muy larga y "costosa", mientras usas el programa generas información que debería guardarse en el disco duro y requiere más movimiento de información) permite el acceso de información de forma más rápida sin necesidad de acceder al disco duro cada vez.
-
-\subsection{Memoria ROM(read only memory):} 
+\section{Memoria ROM(read only memory):} 
 Memoria no volátil o sea que si deja de haber flujo de corriente no pierde información. Contiene las instrucciones más elementales del dispositivo, contiene la BIOS, se encarga de cargar y probar el hardware del sistema y cargar el sistema operativo desde un dispositivo de almacenamiento (disco duro o pendrive).
 
-\subsection{Memoria Caché: } 
+\begin{figure}[h]
+\includegraphics[width=4cm]{rom.jpg}
+\centering
+\caption{Memoria ROM}
+\end{figure}
+
+\section{Memoria RAM:}
+La Random Access Memory o memoria RAM es una memoria volátil, es decir que una vez se corta el flujo de corriente pierde toda su información. En esta se guardan algunos procesos temporales que el micropocesador debe ejecutar constantemente. Existen diversas variaciones de la memoria RAM, entre estas:\\
+•	DRAM (Dynamic RAM)\\
+•	SDRAM (Synchronous DRAM)\\
+•	RDRAM (Rambus DRAM)\\
+
+\begin{figure}[h]
+\includegraphics[width=4cm]{memoriaRAM.jpg}
+\centering
+\caption{Memoria RAM}
+\end{figure}
+
+\section{Memoria Caché: } 
 Componente de hardware o software que almacena datos para que las solicitudes futuras de esos datos se puedan atender con mayor rapidez.
 
-\section{Gestión de la memoria en un computador}
+\section*{Gestión de la memoria en un computador}
 Cuando se quiere abrir un programa se manda la orden de cargar una serie de datos del disco duro a la RAM. El disco duro está hecho de varios discos de acero que son los que contiene la información. El disco tiene una tabla donde tiene guardado la posición de cada uno de estos archivos (sistema de ficheros), luego se busca los datos en la posición especificada.
 
-\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+\section*{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
 Se vuelve poco eficiente un computador que demore para acceder a información, y cada vez los programas se vuelven más exigentes en cuanto a hardware y requieren más espacio, por esta razón se ve que los computadores pierden velocidad con los años, porque las mismas características de hardware de hace unos años ya no son capaces de correr programas más actuales.
 
 El paquete también agrega un comportamiento especial 
@@ -66,14 +81,7 @@ lo indican las reglas de la RAE. \cite{romram}
 
 \vspace{5mm}
 
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
 
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
 
 \clearpage
 \bibliographystyle{IEEEtran}
