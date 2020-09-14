@@ -59,12 +59,6 @@ Read Only Memory o ROM es una memoria no volátil es decir que no pierde su info
     \item{EEPROM(Electrically Erasable Programmable Read-Only Memory)}
 \end{itemize}
 
-\begin{figure}[h]
-\includegraphics[width=4cm]{rom.jpg}
-\centering
-\caption{Memoria ROM}
-\end{figure}
-
 \subsection{Memoria RAM}
 La Random Access Memory o memoria RAM es una memoria volátil, es decir que ``una vez se interrumpe el flujo de corriente pierde toda la información''\cite{romram}. En esta se guardan algunos procesos temporales que el microprocesador debe ejecutar constantemente. Algunas variaciones de la memoria RAM son:
 \begin{itemize}
@@ -72,12 +66,6 @@ La Random Access Memory o memoria RAM es una memoria volátil, es decir que ``un
     \item{SDRAM (Synchronous DRAM)}
     \item{RDRAM (Rambus DRAM)}
 \end{itemize}
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{memoriaRAM.jpg}
-\centering
-\caption{Memoria RAM}
-\end{figure}
 
 \subsection{Memoria Caché} 
 Es una memoria de tipo estático que se sitúa entre el procesador y la memoria principal. Almacena los datos que el procesador debe acceder con más frecuencia para acelerar el acceso a estos. Estas memorias se encuentran divididas en 3 niveles, L1, L2 y L3. El primer nivel de la memoria es el que se encuentra más inmediato al procesador por lo tanto el acceso a la información de este nivel es más rápido al de los otros niveles. Mientras mayor sea el nivel su capacidad de almacenamiento es más grande pero su velocidad será menor.
@@ -100,10 +88,11 @@ Es de dirección unidireccional y transporta las direcciones de memoria a las qu
 Es de dirección bidireccional y es aquel que gestiona el flujo de información que indica si la operación es una lectura o una escritura en la memoria y la garantía de que la operación ocurre en el momento adecuado.
 
 \section{Velocidad de las memorias e importancia}
-Por un lado, la memoria ROM al ser una memoria secuencial debe recorrer todos los datos hasta encontrar la información que le es pedida, esto genera demoras en el acceso a la información si la comparamos a la memoria RAM que al ser aleatoria le es posible acceder a los datos de forma directa. Ahora, la memoria caché resulta mucho más rápida que la memoria RAM y por consecuencia de la ROM. Debido a la inmediatez de esta con el procesador se tiene acceso a la información mucho más rápido que a otras memorias y por esta razón es que es la encargada de almacenar los datos que el procesador necesita de forma más rápida a pesar de la gran diferencia de tamaño con otras memorias.\par
+Por un lado, la memoria ROM al ser una memoria secuencial debe recorrer todos los datos hasta encontrar la información que le es pedida, esto genera demoras en el acceso a la información si la comparamos a la memoria RAM que al ser aleatoria le es posible acceder a los datos de forma directa.Para la memoria RAM también influye su latencia, es decir ``la cantidad de tiempo que se tarda en obtener de la memoria cada bit de información’’\cite{Documento}. Ahora, la memoria caché resulta mucho más rápida que la memoria RAM y por consecuencia de la ROM. Debido a la inmediatez de esta con el procesador se tiene acceso a la información mucho más rápido que a otras memorias y por esta razón es que es la encargada de almacenar los datos que el procesador necesita de forma más rápida a pesar de la gran diferencia de tamaño con otras memorias.\par
 \vspace{5mm}
-Por último, leer directamente el disco duro cada que se solicita información resulta en una operación muy larga(se deben recorren los discos para buscar la información), y también es posible que se genere más información que debería guardarse en el proceso, esto requiere más movimiento de información porque lo que lógicamente requerirá más tiempo y aunque la velocidad con la que giran los discos puede hacer el proceso más rápido sigue siendo más lento que una memoria RAM.
+En el caso del disco duro leerlo directamente cada que se solicita información resulta en una operación muy larga(se deben recorren los discos para buscar la información), y también es posible que se genere más información durante este proceso y deba ser guardada, esto requiere más movimiento de información, lo que lógicamente requerirá más tiempo y aunque dependiendo de la velocidad con la que giran los discos (revoluciones por minuto o RPM) puede hacer el proceso más rápido sigue siendo más lento que una memoria RAM.\par
 
+\vspace{5mm}
 La velocidad de una memoria afecta en gran medida el tiempo que le tomará al CPU procesar la información. Una mayor velocidad permite que la transferencia de datos ya sea almacenar, leer o borrar datos, se realice en menor tiempo y esto en muchos casos genera una diferencia importante en el rendimiento del computador.
 
 \section{Conclusión}
