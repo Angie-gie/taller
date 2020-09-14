@@ -6,6 +6,7 @@
 \usepackage{hyperref}
 \graphicspath{ {images/} }
 \usepackage{cite}
+\usepackage[nottoc]{tocbibind}
 
 \begin{document}
 
@@ -41,7 +42,7 @@
 \newpage
 
 \section{Introducción}
-Comúnmente definimos la memoria como “la capacidad o facultad de retener y recordar información”\cite{definicion} y usualmente relacionamos esto con la memoria humana. Sin embargo, con los años esta capacidad se ha extendido también hasta el ámbito de la electrónica y los computadores. En la presente investigación explicaremos a que nos referimos cuando hablamos de la memoria de un computador, se mencionaran diferentes tipos de memoria que existen y algunas diferencias que tienen entre estas.
+Comúnmente definimos la memoria como ``la capacidad o facultad de retener y recordar información''\cite{definicion} y usualmente relacionamos esto con la memoria humana. Sin embargo, con los años esta capacidad se ha extendido también hasta el ámbito de la electrónica y los computadores. En la presente investigación explicaremos a que nos referimos cuando hablamos de la memoria de un computador, se mencionaran diferentes tipos de memoria que existen y algunas diferencias que tienen entre estas.
 
 
 \section{Definición}
@@ -50,7 +51,7 @@ Dentro de la informática nos referimos a la memoria de un computador como el di
 \section{Tipos de memoria}
 
 \subsection{Memoria ROM} 
-Read Only Memory o ROM es una memoria no volátil es decir que no pierde su información cuando deja de recibir corriente. Esta memoria como su nombre lo indica solo permite le lectura de información y no su escritura. Contiene las instrucciones más elementales del dispositivo, la BIOS, cuya función es cargar y probar el hardware y el sistema operativo desde un dispositivo de almacenamiento (sea disco duro o pendrive). Existen diferentes variaciones de ROM, entre estas tenemos:
+Read Only Memory o ROM es una memoria no volátil es decir que no pierde su información cuando deja de recibir corriente. Esta memoria como su nombre lo indica solo permite le lectura de información y no su escritura. Contiene las instrucciones más elementales del dispositivo, la BIOS, cuya función es ``iniciar y probar el hardware del sistema, y cargar el sistema operativo desde un dispositivo de almacenamiento''\cite{romram}. Existen diferentes variaciones de ROM, entre estas tenemos:
 
 \begin{itemize}
     \item{PROM(Programmable Read-Only Memory)}
@@ -65,7 +66,7 @@ Read Only Memory o ROM es una memoria no volátil es decir que no pierde su info
 \end{figure}
 
 \subsection{Memoria RAM}
-La Random Access Memory o memoria RAM es una memoria volátil, es decir que una vez se corta el flujo de corriente pierde toda su información. En esta se guardan algunos procesos temporales que el micropocesador debe ejecutar constantemente. ALguna variaciones de la memoria RAM son:
+La Random Access Memory o memoria RAM es una memoria volátil, es decir que ``una vez se interrumpe el flujo de corriente pierde toda la información''\cite{romram}. En esta se guardan algunos procesos temporales que el microprocesador debe ejecutar constantemente. Algunas variaciones de la memoria RAM son:
 \begin{itemize}
     \item{DRAM (Dynamic RAM)}
     \item{SDRAM (Synchronous DRAM)}
@@ -78,8 +79,6 @@ La Random Access Memory o memoria RAM es una memoria volátil, es decir que una 
 \caption{Memoria RAM}
 \end{figure}
 
-\vfill
-
 \subsection{Memoria Caché} 
 Es una memoria de tipo estático que se sitúa entre el procesador y la memoria principal. Almacena los datos que el procesador debe acceder con más frecuencia para acelerar el acceso a estos. Estas memorias se encuentran divididas en 3 niveles, L1, L2 y L3. El primer nivel de la memoria es el que se encuentra más inmediato al procesador por lo tanto el acceso a la información de este nivel es más rápido al de los otros niveles. Mientras mayor sea el nivel su capacidad de almacenamiento es más grande pero su velocidad será menor.
 
@@ -88,7 +87,7 @@ El Disco Duro es un dispositivo de almacenamiento que guarda todos los programas
 
 
 \section{Gestión de la memoria en un computador}
-La memoria del computador se encuentra gestionada por el MCH (Memory Controller Hub)  que es un circuito integrado que maneja es acceso desde y hacia el microprocesador, la memoria RAM, entre otros. Unas de sus funciones principales es la de controlar el funcionamiento del bus del procesador y la memoria. Un bus es un “conjunto de conexiones físicas (cables, placa de circuito impreso, etc.) que pueden compartirse con múltiples componentes de hardware para que se comuniquen entre sí.”\cite{bus} El bus está dividido en tres subconjuntos:
+La memoria del computador se encuentra gestionada por el MCH (Memory Controller Hub)  que es un circuito integrado que maneja es acceso desde y hacia el microprocesador, la memoria RAM, entre otros. Unas de sus funciones principales es la de controlar el funcionamiento del bus del procesador y la memoria. Un bus es un ``conjunto de conexiones físicas (cables, placa de circuito impreso, etc.) que pueden compartirse con múltiples componentes de hardware para que se comuniquen entre sí.''\cite{bus} El bus está dividido en tres subconjuntos:
 
 
 \subsection{Bus de datos}
@@ -105,10 +104,10 @@ Por un lado, la memoria ROM al ser una memoria secuencial debe recorrer todos lo
 \vspace{5mm}
 Por último, leer directamente el disco duro cada que se solicita información resulta en una operación muy larga(se deben recorren los discos para buscar la información), y también es posible que se genere más información que debería guardarse en el proceso, esto requiere más movimiento de información porque lo que lógicamente requerirá más tiempo y aunque la velocidad con la que giran los discos puede hacer el proceso más rápido sigue siendo más lento que una memoria RAM.
 
-La velocidad de una memoria afecta en gran medida el tiempo que le tomará al CPU procesar la información. Una mayor velocidad permite que la transferencia de datos, ya sea almacenar, leer o borrar datos, se realice en menor tiempo y esto en muchos casos genera una diferencia importante en el rendimiento del computador.
+La velocidad de una memoria afecta en gran medida el tiempo que le tomará al CPU procesar la información. Una mayor velocidad permite que la transferencia de datos ya sea almacenar, leer o borrar datos, se realice en menor tiempo y esto en muchos casos genera una diferencia importante en el rendimiento del computador.
 
 \section{Conclusión}
-Con esta investigación podemos observar y analizar la importancia que tienen cada uno de los diferentes tipos de memoria y sus usos, podemos tener una idea más clara de como funcionan, en que aspectos se diferencian y como estas diferencias pueden llegar a afectar el rendimiento del computador.
+Con esta investigación podemos observar y analizar la importancia que tienen cada uno de los diferentes tipos de memoria y sus usos, podemos tener una idea más clara de cómo funcionan, en que aspectos se diferencian y como estas diferencias pueden llegar a afectar el rendimiento del computador.
 
 \vspace{5mm}
 
